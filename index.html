@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Developing</title>
   <meta name="description" content="gosco-web">
   <meta name="author" content="gosco-web">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,6 +16,19 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBiqXIaSad119OT8esJHGxxSOkMx8cBJA0",
+    authDomain: "gosco-web.firebaseapp.com",
+    databaseURL: "https://gosco-web.firebaseio.com",
+    projectId: "gosco-web",
+    storageBucket: "",
+    messagingSenderId: "491320634555"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
