@@ -6,7 +6,7 @@
 
   <title>Developing</title>
   <meta name="description" content="gosco-web">
-  <meta name="author" content="gosco-web">
+  <meta name="author" content="gosco">
 
   <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -16,19 +16,27 @@
 </head>
 
 <body>
+	<div class="login-page">
+	  <div class="form">
+	    <form class="register-form">
+	      <input type="text" placeholder="name"/>
+	      <input type="password" placeholder="password"/>
+	      <input type="text" placeholder="email address"/>
+	      <button>create</button>
+	      <p class="message">Already registered? <a href="#">Sign In</a></p>
+	    </form>
+	    <form class="login-form">
+	      <input type="text" placeholder="username"/>
+	      <input type="password" placeholder="password"/>
+	      <button>login</button>
+	      <p class="message">Not registered? <a href="#">Create an account</a></p>
+	    </form>
+	  </div>
+	</div>
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBiqXIaSad119OT8esJHGxxSOkMx8cBJA0",
-    authDomain: "gosco-web.firebaseapp.com",
-    databaseURL: "https://gosco-web.firebaseio.com",
-    projectId: "gosco-web",
-    storageBucket: "",
-    messagingSenderId: "491320634555"
-  };
-  firebase.initializeApp(config);
-</script>
+<script src="js/init.js"></script>
 <script src="js/scripts.js"></script>
 </body>
+
+
 </html>
