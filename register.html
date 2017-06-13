@@ -7,6 +7,7 @@
   <title>Developing</title>
   <meta name="description" content="gosco-web">
   <meta name="author" content="gosco">
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/login.css">
   <!--[if lt IE 9]>
@@ -17,15 +18,16 @@
 <body>
 	<div class="login-page">
 	  <div class="form">
-	    <form class="login-form">
-	      <input type="email" placeholder="email"/>
-	      <input type="password" placeholder="password"/>
-	      <button>login</button>
-	      <p class="message">Not registered? <a href="register.html">Create an account</a></p>
+	    <form class="register-form">
+	      <input id="txtName" type="text" placeholder="name"/>
+	      <input id="txtPassword" type="password" placeholder="password"/>
+	      <input id="txtRePassword" type="password" placeholder="re-enter password"/>
+	      <input id="txtEmail" type="email" placeholder="email address"/>
+	      <button>create</button>
+	      <p class="message">Already registered? <a href="index.html">Sign In</a></p>
 	    </form>
 	  </div>
 	</div>
-<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 <script src="js/init.js"></script>
 <script src="js/scripts.js"></script>
 </body>
